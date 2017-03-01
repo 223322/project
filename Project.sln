@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "theory", "theory\theory.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "happy ticket(methods)", "happy ticket(methods)\happy ticket(methods).csproj", "{4134276E-8EE2-4703-A219-7F6D1D90BB21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "temp", "temp\temp.csproj", "{8251E040-C8B1-4706-906E-B34F48373176}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function_with sin(p 74, №2)", "temp\function_with sin(p 74, №2).csproj", "{8251E040-C8B1-4706-906E-B34F48373176}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
