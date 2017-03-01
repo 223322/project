@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "happy ticket(methods)", "ha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function_with sin(p 74, №2)", "temp\function_with sin(p 74, №2).csproj", "{8251E040-C8B1-4706-906E-B34F48373176}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "function_with_sin(p 74, №5)", "function_with_sin(p 74, №5)\function_with_sin(p 74, №5).csproj", "{75464EF9-9838-45B2-A7C7-A0A7099E0246}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{8251E040-C8B1-4706-906E-B34F48373176}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8251E040-C8B1-4706-906E-B34F48373176}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8251E040-C8B1-4706-906E-B34F48373176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75464EF9-9838-45B2-A7C7-A0A7099E0246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75464EF9-9838-45B2-A7C7-A0A7099E0246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75464EF9-9838-45B2-A7C7-A0A7099E0246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75464EF9-9838-45B2-A7C7-A0A7099E0246}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
