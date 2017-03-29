@@ -23,17 +23,23 @@ namespace work_with_txt_file
             Console.WriteLine("Количество слов:" + textMass.Length);
             
             //Процентное соотношение символов
+            Console.WriteLine("Введите букву");
+            string s = Console.ReadLine();
             char[] array = text.ToCharArray();
             int temp = 0;
-            foreach (char a in array)
+            foreach (char sumbol in array)
             {
-                if (a == 'а')
+                if(sumbol == s[0])
                 temp++;
             }
             int copy = text.Length;
             double procentOfSumbol = (double)temp /copy;
             Console.WriteLine("Колличество симоволов 'a' = {0}%", procentOfSumbol);
             
+            //Перевод текста в нижний регистр и посчитать самый часто встречающийся символ
+            text = text.ToLower();
+            
+
         }
     }
 }
