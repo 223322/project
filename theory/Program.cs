@@ -39,6 +39,7 @@ namespace theory
             weather[3, 2] = 6;
             weather[3, 3] = 6;
             Console.WriteLine(weather[4,4]);
+            System.IO.File.WriteAllText(@"C:\Users\student\Desktop\Новый текстовый документ.txt", "Количество слов:" + textMass.Length);
         }
         }
 }
