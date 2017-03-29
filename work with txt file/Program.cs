@@ -18,7 +18,7 @@ namespace work_with_txt_file
             //Подсчет количества слов
             string s = "";
             string[] textMass;
-            StreamReader sr = new StreamReader(@"C:\Users\USER\Desktop\Новый текстовый документ.txt");
+            StreamReader sr = new StreamReader(@"C:\Users\student\Desktop\Новый текстовый документ.txt");
             while (sr.EndOfStream != true)
             {
                 s = sr.ReadLine();
