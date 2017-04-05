@@ -9,16 +9,28 @@ namespace work_with_txt_file
 {
     class Program
     {
-        static bool IsUnic (string tempCh, char a)
+        static bool IsUnic (string tempSt, char a)
         {
-            for (int i = 0; i < tempCh.Length; i++)
+            for (int i = 0; i < tempSt.Length; i++)
             {
-                if (tempCh[0]==a)
+                if (tempSt[i]==a)
                 {
                     return false;
                 }
-                return true;
             }
+            return true;
+        }
+        static int NumOfSymbolInText(char symbol, string text)
+        {
+            int count = 0;
+            for (int i = 0; i < text.Length; i++)
+            {
+                if(text[i]==symbol)
+                {
+                    count++;
+                }
+            }
+            return count;
         }
         static void Main(string[] args)
         {
@@ -43,19 +55,35 @@ namespace work_with_txt_file
             }
             int copy = text.Length;
             double procentOfSumbol = (double)temp /copy;
-            Console.WriteLine("Колличество симоволов 'a' = {0}%", procentOfSumbol);
+            Console.WriteLine("Колличество симоволов '{0}' = {1}%", s, procentOfSumbol);
             
             //Перевод текста в нижний регистр и посчитать самый часто встречающийся символ
             text = text.ToLower();
             string tempSt = "";
             for (int i = 0; i < text.Length; i++)
             {
-                if (IsUnic(tempSt, text[i])==true)
+                char tempCh = text[i];
+                if (IsUnic(tempSt, text[i]))
                 {
                     tempSt = tempSt + text[i];
                 }
-
+                
             }
+
+            for (int i = 0; i < tempSt.Length; i++)
+            {
+                int tempInt = NumOfSymbolInText(tempSt[i], tempSt);
+                foreach (char sumbol in tempSt)
+                {
+                    if (sumbol == tempSt[i])
+                        temp++;
+                }
+                copy = tempSt.Length;
+                double procentOfSymbol = (double)temp / copy;
+                Console.WriteLine("Количество симвлов {0} = {1}%", tempSt[i], procentOfSymbol);
+            }
+            string readText = (@"C:\Users\student\Desktop\Новый текстовый документ.csv");
+            Console.WriteLine(readText);
         }
     }
 }
