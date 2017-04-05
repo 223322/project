@@ -73,16 +73,18 @@ namespace work_with_txt_file
             for (int i = 0; i < tempSt.Length; i++)
             {
                 int tempInt = NumOfSymbolInText(tempSt[i], tempSt);
-                foreach (char sumbol in tempSt)
-                {
-                    if (sumbol == tempSt[i])
-                        temp++;
-                }
-                copy = tempSt.Length;
-                double procentOfSymbol = (double)temp / copy;
-                Console.WriteLine("Количество симвлов {0} = {1}%", tempSt[i], procentOfSymbol);
+                string num = i + ";" + "/r/n";
+                System.IO.File.AppendAllText(@"C:\Users\student\Desktop\Новый текстовый документ.txt", num);
+               //foreach (char sumbol in tempSt)
+               //{
+               //    if (sumbol == tempSt[i])
+               //        temp++;
+               //}
+               //copy = tempSt.Length;
+               //double procentOfSymbol = (double)temp / copy;
+                //Console.WriteLine("Количество симвлов {0} = {1}%", tempSt[i], procentOfSymbol);
             }
-            string readText = (@"C:\Users\student\Desktop\Новый текстовый документ.csv");
+            string readText = lowerText;
             Console.WriteLine(readText);
         }
     }
