@@ -53,6 +53,7 @@ namespace work_with_txt_file
                 if(sumbol == s[0])
                 temp++;
             }
+            Console.WriteLine(temp);
             int copy = text.Length;
             double procentOfSumbol = (double)temp /copy;
             Console.WriteLine("Колличество симоволов '{0}' = {1}%", s, procentOfSumbol);
@@ -84,8 +85,8 @@ namespace work_with_txt_file
                //double procentOfSymbol = (double)temp / copy;
                 //Console.WriteLine("Количество симвлов {0} = {1}%", tempSt[i], procentOfSymbol);
             }
-            string readText = lowerText;
-            Console.WriteLine(readText);
+            
+            
         }
     }
 }
